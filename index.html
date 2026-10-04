@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>DonaBe - Teste de APIs</title>
+</head>
+<body>
+
+<h2>1. BrasilAPI (CEP)</h2>
+<label>CEP: <input id="cep" value="01310200"></label>
+<button id="consultar-cep">Consultar</button>
+<pre id="saida-cep"></pre>
+
+<h2>2. OSRM (rota)</h2>
+<label>Origem (lon,lat): <input id="coordenadas-origem" value="-46.633309,-23.550520"></label>
+<label>Destino (lon,lat): <input id="coordenadas-destino" value="-46.625290,-23.533773"></label>
+<button id="calcular-rota">Calcular rota</button>
+<pre id="saida-rota"></pre>
+
+<h2>3. BrasilAPI + OSRM (distância entre CEPs)</h2>
+<label>CEP de origem: <input id="cep-origem" value="01310200"></label>
+<label>CEP de destino: <input id="cep-destino" value="04538132"></label>
+<button id="calcular-distancia">Calcular distância</button>
+<pre id="saida-distancia"></pre>
+
+<h2>4. CNPJá (CNPJ e classificação de caridade)</h2>
+<div id="instituicoes"></div>
+<label>CNPJ: <input id="cnpj" value="67.185.694/0001-50"></label>
+<button id="consultar-cnpj">Consultar na CNPJá</button>
+<pre id="saida-caridade"></pre>
+<pre id="saida-cnpj"></pre>
+
+<script src="scripts/cep.js"></script>
+<script src="scripts/osrm.js"></script>
+<script src="scripts/cnpj.js"></script>
+<script src="scripts/caridade.js"></script>
+<script src="scripts/instituicoes.js"></script>
+<script src="scripts/exibicao.js"></script>
+<script src="scripts/pagina.js"></script>
+
+</body>
+</html>
